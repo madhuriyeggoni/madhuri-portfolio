@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+.heading-font {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+}
+
+.subheading-font {
+  font-family: var(--font-jetbrains), monospace;
+}
+
+@theme {
+  --color-vscode-bg: #1e1e1e;
+  --color-vscode-sidebar: #252526;
+  --color-vscode-activityBar: #333333;
+  --color-vscode-statusBar: #007acc;
+  --color-vscode-tabBar: #2d2d2d;
+  --color-vscode-tabActive: #1e1e1e;
+  --color-vscode-tabInactive: #2d2d2d;
+  --color-vscode-text: #cccccc;
+  --color-vscode-textDark: #858585;
+  --color-vscode-border: #3c3c3c;
+  --color-vscode-hover: #2a2d2e;
+  --color-vscode-accent: #0e639c;
+}
+
+:root {
+  --background: #1e1e1e;
+  --foreground: #cccccc;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* VS Code does not scroll the main body */
+  /* Remove default scrollbars */
+  scrollbar-width: thin;
+  scrollbar-color: #424242 transparent;
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #424242;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f4f4f;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
